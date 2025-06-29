@@ -21,7 +21,7 @@ Expected Output:
 
 Solution:
 
-SELECT course_name,ROUND(AVG(score),2) as avg_score
+SELECT course_name,AVG(score) as avg_score
 FROM students
 WHERE student_id IN
 (SELECT DISTINCT student_id
