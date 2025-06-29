@@ -2,6 +2,7 @@ Namastekart, an e-commerce company, has observed a notable surge in return order
 
 Write an SQL to find list of customers along with their return percent (Round to 2 decimal places), display the output in ascending order of customer name.
 
+Update
  
 
 Table: orders (primary key : order_id)
