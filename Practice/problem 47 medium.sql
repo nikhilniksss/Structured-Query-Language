@@ -25,3 +25,10 @@ Expected Output
 |       1 | nevada     |          457.14 |
 +---------+------------+-----------------+
 
+solution:
+
+SELECT reel_id,state,
+ROUND(MAX(cumulative_views)/COUNT(*),2) AS daily_average
+FROM reel
+GROUP BY reel_id,state
+ORDER BY daily_average DESC;
